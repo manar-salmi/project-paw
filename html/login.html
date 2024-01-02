@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="../css/paw.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="left-section">
+      <img src="../wallpaperflare.com_wallpaper (5).jpg" alt="Image" class="image">
+     
+    </div>
+    <div class="right-section">
+        <div class="welcome-text">
+            <h2>Welcome to MeDomeService</h2>
+          </div>
+      <div class="login-box" id="login-box">
+        <h2>Tell us about you</h2>
+        <div class="input-group">
+          <input type="text" id="username" placeholder="Organization or Clinic Name" required>
+        </div>
+        <div class="input-group">
+          <input type="text" id="password" placeholder="Your Title or Name (eg: Dr John Doe)" required>
+        </div>
+        <button onclick="showLogin()">Login</button>
+      </div>
+      <div class="additional-inputs" id="additional-inputs" style="display: none;">
+        <h2>Account Information</h2> 
+        <!-- <div class="input-group">
+            <input type="text" id="email" placeholder="Your Numbre" required>
+          </div> -->
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="new-password" placeholder="New Password" required>
+        </div>
+        <button onclick="completeLogin()">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showLogin() {
+      document.getElementById("login-box").style.display = "none";
+      document.getElementById("additional-inputs").style.display = "block";
+    }
+
+    function completeLogin() {
+      // Code to handle submission of additional login inputs
+    }
+  </script>
+
+</body>
+</html>
